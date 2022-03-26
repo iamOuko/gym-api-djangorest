@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ldmq2y&dsv6u033==-u&y!r&nw@288bx_sjjxru%#28aq^o_^9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -36,17 +36,17 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'gym',
+    'rest_framework',
+    'drf_yasg',
+    'rest_framework.authtoken',
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    'gym',
-    'rest_framework',
-    'rest_framework.authtoken',
-    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
@@ -150,8 +150,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'gymproject/static')
-]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR,'gymproject/staticfiles')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
