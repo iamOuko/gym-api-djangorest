@@ -1,0 +1,1 @@
+Heroku app link : https://gym-app-django.herokuapp.com/
