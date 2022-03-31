@@ -1,1 +1,1 @@
-Heroku-app link : https://gym-app-django.herokuapp.com/
+Heroku-app link : https://gym-app-django.herokuapp.com/swagger/
